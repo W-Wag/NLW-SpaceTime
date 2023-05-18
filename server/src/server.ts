@@ -1,6 +1,10 @@
+import 'dotenv/config'
+
 import fastify from 'fastify'
 import cors from '@fastify/cors'
+import jwt from '@fastify/jwt'
 import { memoriesRoutes } from './routes/memories'
+import { authRoute } from './routes/auth'
 
 const app = fastify()
 
@@ -9,7 +13,12 @@ app.register(cors, {
   // no caso ['http://localhost:3333', 'http://urldaprodução']
   origin: true,
 })
+app.register(jwt, {
+  // Mudar em fase de produção
+  secret: 'spacetime',
+})
 app.register(memoriesRoutes)
+app.register(authRoute)
 
 app
   .listen({
