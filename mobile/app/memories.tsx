@@ -16,6 +16,7 @@ interface Memory {
   coverUrl: string
   except: string
   id: string
+  createdAt: string
 }
 
 export default function Memories() {
@@ -91,8 +92,8 @@ export default function Memories() {
               <Text className="px-8 font-body text-base leading-relaxed text-gray-100">
                 {memory.except}
               </Text>
-              <Link href="/memories/id">
-                <TouchableOpacity className="flex-row items-center gap-2">
+              <Link href="/id" asChild>
+                <TouchableOpacity className="flex-row items-center gap-2 pb-4 pl-7">
                   <Text className="font-body text-sm text-gray-200">
                     Ler mais
                   </Text>
