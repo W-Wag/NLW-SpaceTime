@@ -42,7 +42,8 @@ E também as prints do projeto na versão web rodando via localhost.
 
 ![ScreenShots](https://uploaddeimagens.com.br/images/004/475/591/full/imagem_2023-05-21_171928380.png?1684700368)
 
-obs: a ultima imagem e dos detalhes de uma única memúria foi feita após o evento acabar sendo desenvolvida por eu mesmo.
+obs: a ultima imagem e dos detalhes de uma única memória foi feita após o evento acabar sendo desenvolvida por eu mesmo.
+
 ---
 
 ## Tecnologias Usadas
